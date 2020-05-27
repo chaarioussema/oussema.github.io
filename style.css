@@ -1,0 +1,219 @@
+body {
+  background-color: white;
+}
+aside {
+  background-color:yellow;
+}
+main {
+  background-color: black;
+}
+.links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.links   li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+
+.social-links li{
+	 display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.social-links li a{
+	 width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      outline: 0;
+}
+.social-links li a .icon{
+	height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color:yellow;
+    background-color: black;
+    border-radius: 500px;
+    transition:all 0.5s ease;
+    outline: 0;
+
+}
+.social-links li a .icon:hover{
+	background-color:yellow;
+	color:black;
+}
+.email a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.Profileimg{
+   height: 400px;
+   position: relative;
+  padding: 10px;
+  overflow: hidden;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Profileimg::after{
+	content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color:rgba(255,255,0,0.25);
+}
+ img {
+    filter: grayscale(100%);
+    margin: auto;
+  }
+.Profileimg img{
+	    height: 400px;
+}
+.bottomsection .name{
+	font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color:black;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+    border-bottom:2px solid rgba(0,0,0,0.25);
+    top:10px;
+    bottom: 10px;
+}
+.timeline .block{
+	 color: yellow;
+    position: relative;
+    padding: 10px 0;
+}
+.timeline .block:not(:last-child){
+   border-bottom: 1px solid rgba(255,255,0,0.25);
+}
+.timeline .block::before{
+	 content: "";
+        position: absolute;
+        top: 46px;
+        bottom: 0;
+        left: -1.5rem;
+        margin: auto;
+        height: 100%;
+        width: 2px;
+        background-color:yellow; 
+}
+.timeline .block .heading{
+	 font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      position: relative;
+      text-transform: uppercase;
+}
+.timeline .block .heading::before {
+        content: "";
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        background-color: yellow;
+        border-radius: 500px;
+        top: 12px;
+        left: -28px;
+  }
+.timeline .block .subHeading{
+	font-size: 16px;
+      font-weight: normal;
+      margin: 10px auto 2px;
+      position: relative;
+      font-weight: 600;
+}
+.timeline .block .subHeading::before{
+	    content: "";
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        box-sizing: border-box;
+        border: 1px solid yellow;
+        background-color: black;
+        border-radius: 500px;
+        top: 8px;
+        left: -27px;
+
+}
+.skill-bar{
+	 margin: 10px auto;
+}
+.skill-bar .circularProgress{
+	 height: 100px;
+      width: 100px;
+      border-radius: 500px;
+      box-sizing: border-box;
+      position: relative;
+      margin: 20px auto;
+}
+.skill-bar .circularProgress::before{
+	  content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 90%;
+        width: 90%;
+        border: 1px solid yellow;
+        border-radius: 500px;
+        z-index: 1;
+        background-color:black;
+}
+.skill-bar .circularProgress .icon{
+	height: 80px;
+        width: 80px;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+}
+.skill-bar .skill {
+      text-align: center;
+      margin: 10px auto;
+      text-transform: uppercase;
+      font-size: 14px;
+}
+
+
+
+
+@media (min-width: 992px){
+	
+	aside{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 400px;
+    }
+      main {
+      padding: 20px;
+      margin-left: 400px;
+      width: 100%;
+    }
+   
+	
+}
